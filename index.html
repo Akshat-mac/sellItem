@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Haven - Delicious Veg Sandwiches & Burgers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loader -->
+    <div id="loader">
+        <div class="spinner"></div>
+        <p>Loading the tastiest items...</p>
+    </div>
+
+    <!-- Main Content -->
+    <div id="content" style="display:none;">
+        
+        <!-- Header Section -->
+        <header>
+            <div class="header-content">
+                <h1>Welcome to Veg Delight</h1>
+                <p>Your favorite veg sandwiches and burgers, served fresh and fast.</p>
+            </div>
+        </header>
+
+        <!-- Main Section for Classic Veg Sandwich -->
+        <section id="sandwich1">
+            <div class="container">
+                <div class="product-image">
+                    <img src="sand.jpg" alt="Classic Veg Sandwich">
+                </div>
+                <div class="product-details">
+                    <h2>Classic Veg Sandwich</h2>
+                    <p>Freshly toasted whole grain bread, layered with crunchy veggies, avocado, and creamy hummus, perfect for a healthy meal.</p>
+                    
+                    <!-- Key Ingredients and Available Variants Container -->
+                    <div class="features-variants-container">
+                        <div class="features">
+                            <h3>Key Ingredients</h3>
+                            <ul>
+                                <li>Whole Grain Bread</li>
+                                <li>Fresh Avocado</li>
+                                <li>Tomatoes, Cucumbers & Lettuce</li>
+                                <li>Creamy Hummus</li>
+                                <li>Olive Oil Dressing</li>
+                            </ul>
+                        </div>
+                        <div class="variants">
+                            <h3>Available Variants:</h3>
+                            <p>Regular - $5.99</p>
+                            <p>Grilled - $6.99</p>
+                            <p>Meal Combo (with Fries & Drink) - $9.99</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Action Buttons -->
+                    <div class="action-buttons">
+                        <button class="add-to-bag" onclick="openModal('Classic Veg Sandwich added to your cart!')">Add to Cart</button>
+                        <button class="buy-now" onclick="openModal('Classic Veg Sandwich ordered successfully!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Section for Veggie Delight Burger -->
+        <section id="burger2">
+            <div class="container">
+                <div class="product-image">
+                    <img src="burgur.avif" alt="Veggie Delight Burger">
+                </div>
+                <div class="product-details">
+                    <h2>Veggie Delight Burger</h2>
+                    <p>A wholesome, plant-based patty topped with fresh veggies, vegan mayo, and served on a whole grain bun.</p>
+                    
+                    <div class="features-variants-container">
+                        <div class="features">
+                            <h3>Key Ingredients</h3>
+                            <ul>
+                                <li>Plant-based Patty</li>
+                                <li>Vegan Cheese</li>
+                                <li>Spinach & Avocado</li>
+                                <li>Whole Grain Bun</li>
+                            </ul>
+                        </div>
+                        <div class="variants">
+                            <h3>Available Variants:</h3>
+                            <p>Single - $5.99</p>
+                            <p>Meal Combo - $9.99</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Action Buttons -->
+                    <div class="action-buttons">
+                        <button class="add-to-bag" onclick="openModal('Veggie Delight Burger added to your cart!')">Add to Cart</button>
+                        <button class="buy-now" onclick="openModal('Veggie Delight Burger ordered successfully!')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="footer-content">
+                <p>© 2024 Veg Delight. All rights reserved.</p>
+                <p>Contact us: <a href="mailto:support@vegdelight.com">support@vegdelight.com</a></p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="modal-message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
